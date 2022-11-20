@@ -14,10 +14,10 @@ namespace duckdb {
 
 template <class T>
 struct NumericLimits {
-	DUCKDB_API static inline T Minimum();
-	DUCKDB_API static inline T Maximum();
-	DUCKDB_API static inline bool IsSigned();
-	DUCKDB_API static inline idx_t Digits();
+	DUCKDB_API static T Minimum();
+	DUCKDB_API static T Maximum();
+	DUCKDB_API static bool IsSigned();
+	DUCKDB_API static idx_t Digits();
 };
 
 template <>
